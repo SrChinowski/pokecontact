@@ -27,11 +27,11 @@ export const Landing: FC<ILandingProps> = (props) => {
                     <img src={pokeball}/>
                     <p className="hero-description">{t('Landing.Description')}</p>
                 </Flex>
-                <Button type="primary"> 
                     <Link to={"/contacts"}>
-                        {t("Landing.Btn")}
+                        <Button type="primary" style={{width: "50%"}}> 
+                            {t("Landing.Btn")}
+                        </Button>                
                     </Link>
-                </Button>
             </Flex>
             <img className="hero-img" src={hero}/>
         </Flex>
@@ -44,11 +44,11 @@ export const Landing: FC<ILandingProps> = (props) => {
             <Flex vertical className="mobile-hero-container" justify="flex-end">
                 <h1 className="hero-text">{t('Landing.Hero')}</h1>
                 <p className="hero-description">{t('Landing.Description')}</p>
-                <Button type="primary"> 
-                    <Link to={"/contacts"}>
+                <Link to={"/contacts"}>
+                    <Button type="primary" style={{width: "50%"}}> 
                         {t("Landing.Btn")}
-                    </Link>
-                </Button>
+                    </Button>                
+                </Link>
             </Flex>
         </Flex>
     )

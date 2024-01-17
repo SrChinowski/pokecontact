@@ -1,0 +1,22 @@
+.ant-layout-header{
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 24% 60%, 17% 100%, 0 100%);
+    height: 13vh;
+    background: #EF3D54;
+}
+
+.ant-layout-header::before {
+    content: '';
+    position: absolute;
+    top: -2px; /* Ajusta según el grosor deseado para el borde */
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 24% 60%, 17% 100%, 0 100%);
+    box-shadow: 0 0 0 2px #030202;
+    background: inherit;
+}
+
+.poke-sider {
+    background: #EF3D54 !important;
+}

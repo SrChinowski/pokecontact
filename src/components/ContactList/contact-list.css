@@ -1,0 +1,13 @@
+.contact-list-container {
+    height: 100% !important;
+    overflow-y: scroll;
+    padding: 10px 15px;
+}
+
+.ant-list-item-meta-title a{
+    color: #fff !important;
+}
+
+.ant-list-item-meta-title a:hover{
+    color: green !important;
+}
