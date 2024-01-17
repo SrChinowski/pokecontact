@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "LaoMuangKhong-Regular";   /*Can be any text*/
+    src: url("../../assets/fonts/LaoMuangKhong-Regular.ttf") format("ttf");
+}
+
+*{
+    white-space: pre-line;
+}
+
+.hero-text{
+    font-size: 6.5vw;
+}
+
+.hero-description{
+    font-size: 1.5vw;
+}
+
+.logo-img {
+    width: 20%;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo-img {
+        position: absolute;
+        align-self: center;
+        z-index: 99;
+    }
+
+    .hero-text{
+        color: white;
+        font-size: 10vw;
+    }
+    
+    .hero-description{
+        color: white;
+        font-size: 4vw;
+    }
+
+    .hero-img {
+        position: fixed;
+        width: 100%;
+    }
+}
+
+.hero-img {
+    height: 100vh;
+}
+
+.landing-container{
+    padding-left: 7%;
+}
+
+.mobile-hero-container{
+    background: linear-gradient(189deg, #F1BC33 -8.82%, rgba(222, 23, 31, 0.91) 137.36%);
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+    height: 60vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 0 7% 10% 7%;
+}
